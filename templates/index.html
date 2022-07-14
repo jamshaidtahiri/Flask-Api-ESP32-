@@ -1,0 +1,13 @@
+<h3>Our Flask Buttons</h3>
+    <form method="post" action="/">
+        <input type="submit" value="ON" name="action1"/>
+        <input type="submit" value="OFF" name="action2" />
+    </form>
+   <!-- -->
+    <ul>        
+        {% for key,value in data.items() %}
+        
+            <li>{{key}}</li>
+            <li>{{value}}</li>
+        {% endfor %}
+        </ul>
